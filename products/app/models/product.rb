@@ -6,7 +6,7 @@ class Product
 
 
     def self.all
-        results = DB.exec("SELECT * FROM products")
+        results = DB.exec("SELECT * FROM products ORDER BY id ASC")
         return results.map do |result|
             {
                 "id" => result["id"].to_i,
