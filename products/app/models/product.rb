@@ -12,7 +12,7 @@ class Product
                 "id" => result["id"].to_i,
                 "name" => result["name"],
                 "image" => result["image"],
-                "price" => result["price"].to_i,
+                "price" => result["price"],
                 "qty" => result["qty"].to_i
             }
         end
@@ -27,7 +27,7 @@ class Product
             "id" => results.first["id"].to_i,
             "name" => results.first["name"],
             "image" => results.first["image"],
-            "price" => results.first["price"].to_i,
+            "price" => results.first["price"],
             "qty" => results.first["qty"].to_i
         }
 
@@ -46,7 +46,7 @@ class Product
         "id" => results.first["id"].to_i,
         "name" => results.first["name"],
         "image" => results.first["image"],
-        "price" => results.first["price"].to_i,
+        "price" => results.first["price"],
         "qty" => results.first["qty"].to_i
      }
 end
