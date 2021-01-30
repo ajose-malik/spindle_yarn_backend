@@ -22,6 +22,6 @@
      <!-- womenwear {CREATE TABLE womenwear (id SERIAL, name VARCHAR(32),image TEXT, price MONEY, description TEXT );}{INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description')}
          -->
 
-INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description');
-INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description');
-INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description');
+INSERT INTO womenwear (name,image, price,description) VALUES ('SATIN EFFECT STRIPED SHIRT','https://static.zara.net/photos///2021/V/0/1/p/8741/048/170/2/w/1280/8741048170_2_1_1.jpg?ts=1611746832072',39.90, 'LONG SHIRT WITH LAPEL COLLAR, LONG SLEEVES, AND BUTTONED CUFFS. FRONT');
+INSERT INTO womenwear (name,image, price,description) VALUES ('STRIPED CROP TOP','https://static.zara.net/photos///2021/V/0/1/p/1165/055/044/3/w/1280/1165055044_1_1_1.jpg?ts=1611927904067',29.90 , 'ROUND NECK CROP TOP WITH SHORT SLEEVES.');
+INSERT INTO womenwear (name,image, price,description) VALUES ('STRIPED PETER PAN COLLAR TOP','https://static.zara.net/photos///2021/V/0/1/p/4661/003/622/2/w/1280/4661003622_2_1_1.jpg?ts=1610703808057',39.90, 'V-NECK TOP WITH PETER PAN COLLAR. SHORT BALLOON SLEEVES. FRONT BUTTON');
