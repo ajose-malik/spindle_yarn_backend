@@ -1,8 +1,8 @@
 class Product
-    if ENV["DATABASE_URL"]
+    # if ENV["DATABASE_URL"]
   PG.connect(ENV['DATABASE_URL'])
-elsif
-  DB = PG.connect({:host => "localhost", :port => 5432, :dbname => 'contacts_development'})
+# elsif
+#   DB = PG.connect({:host => "localhost", :port => 5432, :dbname => 'contacts_development'})
 end
 # INDEX
 
@@ -14,7 +14,7 @@ end
             {
                 "id" => result["id"].to_i,
                 "name" => result["name"],
-                "image" => result["image"],
+                # "image" => result["image"],
                 "price" => result["price"],
                 "description" => result["description"]
             }
