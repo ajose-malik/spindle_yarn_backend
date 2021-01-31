@@ -9,35 +9,35 @@ end
 # INDEX
 
 
-    def self.all
-        results = DB.exec("SELECT * FROM menwear ORDER BY id ASC")
-        return results.map do |result|
+    # def self.all
+    #     results = DB.exec("SELECT * FROM menwear ORDER BY id ASC")
+    #     return results.map do |result|
 
-            {
-                "id" => result["id"].to_i,
-                "name" => result["name"],
-                "image" => result["image"],
-                "price" => result["price"],
-                "description" => result["description"]
-            }
+    #         {
+    #             "id" => result["id"].to_i,
+    #             "name" => result["name"],
+    #             "image" => result["image"],
+    #             "price" => result["price"],
+    #             "description" => result["description"]
+    #         }
+    #     end
+
+    # end
+
+        def self.all
+            results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
+            return results.map do |result|
+
+                {
+                    "id" => result["id"].to_i,
+                    "name" => result["name"],
+                    "image" => result["image"],
+                    "price" => result["price"],
+                    "description" => result["description"]
+                }
+            end
+
         end
-
-    end
-
-        # def self.all
-        #     results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
-        #     return results.map do |result|
-
-        #         {
-        #             "id" => result["id"].to_i,
-        #             "name" => result["name"],
-        #             "image" => result["image"],
-        #             "price" => result["price"],
-        #             "description" => result["description"]
-        #         }
-        #     end
-
-        # end
 
 
 # SHOW
