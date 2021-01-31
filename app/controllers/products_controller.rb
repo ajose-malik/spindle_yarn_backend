@@ -5,6 +5,7 @@ class ProductsController < ApplicationController
     def index
         render  json: Product.all
     end
+
 # SHOW METHOD
     def show
        render json: Product.find(params['id'])
