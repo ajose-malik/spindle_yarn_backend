@@ -1,7 +1,8 @@
 class Product
-    if ENV["DATABASE_URL"]
-  PG.connect(ENV['DATABASE_URL'])
-elsif
+    if(ENV['DATABASE_URL'])
+      uri = URI.parse(ENV['DATABASE_URL'])
+      DB = PG.connect(uri.hostname, uri.port, nil, nil, uri.path[1..-1], uri.user, uri.password)
+else
   DB = PG.connect({:host => "localhost", :port => 5432, :dbname => 'spindle_yarn_backend_development'})
 end
 # INDEX
@@ -36,6 +37,21 @@ end
         end
 
     end
+
+        # def self.all
+        #     results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
+        #     return results.map do |result|
+        #
+        #         {
+        #             "id" => result["id"].to_i,
+        #             "name" => result["name"],
+        #             "image" => result["image"],
+        #             "price" => result["price"],
+        #             "description" => result["description"]
+        #         }
+        #     end
+        #
+        # end
 
 
 # SHOW
