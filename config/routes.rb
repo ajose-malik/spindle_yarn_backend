@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 #  get '/womenwear', to: 'products#index'
 #  get '/thriftwear', to: 'products#index'
 # SHOW ROUTE
-get '/menwear/:id', to: 'products#show'
+get 'menwear/:id', to: 'products#show'
 #CREATE ROUTE
 post '/menwear', to: 'products#create'
 #DELETE ROUTE
