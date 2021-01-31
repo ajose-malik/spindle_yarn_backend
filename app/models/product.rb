@@ -7,7 +7,7 @@ else
 end
 # INDEX
 def self.all
-    results = DB.exec("SELECT * FROM clothing WHERE category = 'men'")
+    results = DB.exec("SELECT * FROM clothing")
     return results.map do |result|
  # (SELECT * FROM menwear WHERE category = 'men')
         {
@@ -22,21 +22,21 @@ def self.all
 
 end
 
-    def self.all
-        results = DB.exec("SELECT * FROM clothing WHERE category = 'women'")
-        return results.map do |result|
-
-            {
-                "id" => result["id"].to_i,
-                "name" => result["name"],
-                "image" => result["image"],
-                "price" => result["price"],
-                "description" => result["description"],
-                "category" => result["category"]
-            }
-        end
-
-    end
+    # def self.all
+    #     results = DB.exec("SELECT * FROM clothing WHERE category = 'women'")
+    #     return results.map do |result|
+    #
+    #         {
+    #             "id" => result["id"].to_i,
+    #             "name" => result["name"],
+    #             "image" => result["image"],
+    #             "price" => result["price"],
+    #             "description" => result["description"],
+    #             "category" => result["category"]
+    #         }
+    #     end
+    #
+    # end
 
         # def self.all
         #     results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
