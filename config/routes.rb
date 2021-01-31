@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
 # INDEX ROUTE
- get '/womenwear', to: 'products#index'
+ get '/menwear', to: 'products#index'
 #  get '/womenwear', to: 'products#index'
 #  get '/thriftwear', to: 'products#index'
 # SHOW ROUTE
