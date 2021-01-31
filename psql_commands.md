@@ -22,6 +22,9 @@
      <!-- womenwear {CREATE TABLE womenwear (id SERIAL, name VARCHAR(32),image TEXT, price MONEY, description TEXT );}{INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description')}
          -->
 
-INSERT INTO womenwear (name,image, price,description) VALUES ('SATIN EFFECT STRIPED SHIRT','https://static.zara.net/photos///2021/V/0/1/p/8741/048/170/2/w/1280/8741048170_2_1_1.jpg?ts=1611746832072',39.90, 'LONG SHIRT WITH LAPEL COLLAR, LONG SLEEVES, AND BUTTONED CUFFS. FRONT');
-INSERT INTO womenwear (name,image, price,description) VALUES ('STRIPED CROP TOP','https://static.zara.net/photos///2021/V/0/1/p/1165/055/044/3/w/1280/1165055044_1_1_1.jpg?ts=1611927904067',29.90 , 'ROUND NECK CROP TOP WITH SHORT SLEEVES.');
-INSERT INTO womenwear (name,image, price,description) VALUES ('STRIPED PETER PAN COLLAR TOP','https://static.zara.net/photos///2021/V/0/1/p/4661/003/622/2/w/1280/4661003622_2_1_1.jpg?ts=1610703808057',39.90, 'V-NECK TOP WITH PETER PAN COLLAR. SHORT BALLOON SLEEVES. FRONT BUTTON');
+INSERT INTO womenwear (name,image, price,description) VALUES ('WOVEN KNIT VEST','https://static.zara.net/photos///2021/V/0/1/p/9598/040/406/2/w/1280/9598040406_1_1_1.jpg?ts=1611923884740',35.90, 'VEST WITH ROUND NECKLINE.');
+INSERT INTO womenwear (name,image, price,description) VALUES ('THE ‘90S FULL LENGTH JEANS','https://static.zara.net/photos///2021/V/0/1/p/7513/054/400/2/w/1280/7513054400_1_1_1.jpg?ts=1611683875041',49.90, 'HIGH-WAISTED JEANS WITH FIVE POCKETS. WASHED EFFECT. FRONT RIPPED DETAIL. UNFINISHED HEM. FRONT ZIP AND METAL BUTTON CLOSURE.');
+INSERT INTO womenwear (name,image, price,description) VALUES ('FLARED CROP LEGGINGS','https://static.zara.net/photos///2021/V/0/1/p/1478/048/806/2/w/1280/1478048806_1_1_1.jpg?ts=1611912259851',49.90, 'Recycled polyester is made from recycled PET plastic like that from plastic bottles.);
+INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description');
+INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description');
+INSERT INTO womenwear (name,image, price,description) VALUES ('name','image',price, 'description');

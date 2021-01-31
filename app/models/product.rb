@@ -4,7 +4,7 @@ class Product
     if ENV["DATABASE_URL"]
   PG.connect(ENV['DATABASE_URL'])
 elsif
-  DB = PG.connect({:host => "localhost", :port => 5432, :dbname => 'contacts_development'})
+  DB = PG.connect({:host => "localhost", :port => 5432, :dbname => 'spindle_yarn_backend_development'})
 end
 # INDEX
 
@@ -27,7 +27,7 @@ end
         # def self.all
         #     results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
         #     return results.map do |result|
-
+        #
         #         {
         #             "id" => result["id"].to_i,
         #             "name" => result["name"],
@@ -36,8 +36,8 @@ end
         #             "description" => result["description"]
         #         }
         #     end
-
-        # end
+        #
+        end
 
 
 # SHOW
