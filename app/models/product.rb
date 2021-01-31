@@ -16,7 +16,7 @@ end
             {
                 "id" => result["id"].to_i,
                 "name" => result["name"],
-                # "image" => result["image"],
+                "image" => result["image"],
                 "price" => result["price"],
                 "description" => result["description"]
             }
