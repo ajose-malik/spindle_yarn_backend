@@ -9,7 +9,7 @@ class Product
 
 
     def self.all
-        results = DB.exec("SELECT * FROM menwear ORDER BY id ASC")
+        results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
         return results.map do |result|
 
             {
