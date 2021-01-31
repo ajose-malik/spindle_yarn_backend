@@ -1,13 +1,10 @@
 class Product
-    DB =PG.connect({:host => 'localhost', :port => 5432, :dbname => 'spindle_yarn_backend_development'})
-
     if ENV["DATABASE_URL"]
   PG.connect(ENV['DATABASE_URL'])
 elsif
   DB = PG.connect({:host => "localhost", :port => 5432, :dbname => 'spindle_yarn_backend_development'})
 end
 # INDEX
-
 
     def self.all
         results = DB.exec("SELECT * FROM menwear ORDER BY id ASC")
