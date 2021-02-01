@@ -38,17 +38,17 @@ INSERT INTO clothing (name,image, price,description, category)VALUES ('WOOL BLAZ
 
 
 
-INSERT INTO clothing (name,image, price,description, category) VALUES ('Vintage Akira Joker tee','https://d2h1pu99sxkfvn.cloudfront.net/b0/14877983/883841254_83c003b51ab547fbaaec66e225974acc/P0.jpg',950, 'super faded w/ light distressing on the neck','thirft');
+INSERT INTO clothing (name,image, price,description, category) VALUES ('Vintage Akira Joker tee','https://d2h1pu99sxkfvn.cloudfront.net/b0/14877983/883841254_83c003b51ab547fbaaec66e225974acc/P0.jpg',950, 'super faded w/ light distressing on the neck','thrift');
 INSERT INTO clothing (name,image, price,description, category) VALUES ('Vintage Nirvana band
-tee','https://d2h1pu99sxkfvn.cloudfront.net/b0/6094468/633176884_b82d7e843e37411eb7a31822cf10c8b8/P0.jpg',800, 'in almost perfect condition • minimal to no cracking • still has fold lines • clean good condition • • cd and cassette tape included • Pit to pit: 21in • Length: 26in.','thirft');
+tee','https://d2h1pu99sxkfvn.cloudfront.net/b0/6094468/633176884_b82d7e843e37411eb7a31822cf10c8b8/P0.jpg',800, 'in almost perfect condition • minimal to no cracking • still has fold lines • clean good condition • • cd and cassette tape included • Pit to pit: 21in • Length: 26in.','thrift');
 
 
-INSERT INTO clothing (name,image, price,description, category)VALUES ('Vintage 90s Nike Hoodie ','https://d2h1pu99sxkfvn.cloudfront.net/b0/13393154/858954959_d2ba553ddaa54689badd9259be122c55/P0.jpg',10, 'Center Swoosh Travis Scott Hoodie Sz XL. Good condition few spots here and there, rare color.','thirft');
+INSERT INTO clothing (name,image, price,description, category)VALUES ('Vintage 90s Nike Hoodie ','https://d2h1pu99sxkfvn.cloudfront.net/b0/13393154/858954959_d2ba553ddaa54689badd9259be122c55/P0.jpg',10, 'Center Swoosh Travis Scott Hoodie Sz XL. Good condition few spots here and there, rare color.','thrift');
 
-INSERT INTO clothing (name,image, price,description, category) VALUES ('BOBA FETT Empire Strikes Back','https://i.ebayimg.com/images/g/xt0AAOSw3v1f4EvN/s-l1600.jpg',170, 'The Kenner Star Wars The Power of the Force: Boba Fett from the Star Wars Series is an action figure appropriate for both boys and girls. Its recommended age is 4+. The toy was introduced on the market in 1997. It measures 3.75 inches. The product falls into the Action Figure Collectibles category.','thirft');
+INSERT INTO clothing (name,image, price,description, category) VALUES ('BOBA FETT Empire Strikes Back','https://i.ebayimg.com/images/g/xt0AAOSw3v1f4EvN/s-l1600.jpg',170, 'The Kenner Star Wars The Power of the Force: Boba Fett from the Star Wars Series is an action figure appropriate for both boys and girls. Its recommended age is 4+. The toy was introduced on the market in 1997. It measures 3.75 inches. The product falls into the Action Figure Collectibles category.','thrift');
 
 
-INSERT INTO clothing (name,image, price,description, category) VALUES ('1999 Pokemon Base Set Charizard ','https://i.ebayimg.com/images/g/jqcAAOSwEz1gD3pN/s-l1600.jpg',10000, 'CGC 6 EX-MT 1999 Pokemon Base Set Shadowless Charizard 4/102 Holo Rare 🔥.','thirft');
-INSERT INTO clothing (name,image, price,description, category)VALUES ('name','image',price, 'description','thirft');
-INSERT INTO clothing (name,image, price,description, category) VALUES ('name','image',price, 'description','thirft');
-INSERT INTO clothing (name,image, price,description, category) VALUES ('name','image',price, 'description','thirft');
+INSERT INTO clothing (name,image, price,description, category) VALUES ('1999 Pokemon Base Set Charizard ','https://i.ebayimg.com/images/g/jqcAAOSwEz1gD3pN/s-l1600.jpg',10000, 'CGC 6 EX-MT 1999 Pokemon Base Set Shadowless Charizard 4/102 Holo Rare 🔥.','thrift');
+INSERT INTO clothing (name,image, price,description, category)VALUES ('name','image',price, 'description','thrift');
+INSERT INTO clothing (name,image, price,description, category) VALUES ('name','image',price, 'description','thrift');
+INSERT INTO clothing (name,image, price,description, category) VALUES ('name','image',price, 'description','thrift');

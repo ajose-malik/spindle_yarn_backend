@@ -41,10 +41,10 @@ end
 
 #create
 def self.create(res)
-    results =DB.exec(
+    results = DB.exec(
     <<-SQL
         INSERT INTO clothing (name, image, price, description, category)
-        VALUES  ('#{res["name"]}','#{res["image"]}','#{res["price"]} ',#{res["description"]} ,#{res["category"]})
+        VALUES  ('#{res["name"]}','#{res["image"]}','#{res["price"]} ','#{res["description"]}','#{res["category"]}')
         RETURNING id, name, image, price, description,category
     SQL
     )
@@ -72,8 +72,8 @@ def self.update(id,res)
 results = DB.exec(
     <<-SQL
          UPDATE clothing
-         SET name = '#{res["name"]}' , image ='#{res["image"]}',price ='#{res["price"]}',description =#{res["description"]},
-         category =#{res["category"]}
+         SET name = '#{res["name"]}' , image ='#{res["image"]}',price ='#{res["price"]}',description ='#{res["description"]}',
+         category ='#{res["category"]}'
          WHERE id=#{id}
          RETURNING id, name, image, price, description,category
     SQL
