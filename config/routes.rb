@@ -3,8 +3,7 @@ Rails.application.routes.draw do
 
 # INDEX ROUTE
  get '/products', to: 'products#index'
- # get '/womenwear', to: 'products#windex'
-#  get '/thriftwear', to: 'products#index'
+ 
 # SHOW ROUTE
 get '/products/:id', to: 'products#show'
 #CREATE ROUTE

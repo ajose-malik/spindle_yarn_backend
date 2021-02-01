@@ -22,36 +22,6 @@ def self.all
 
 end
 
-    # def self.all
-    #     results = DB.exec("SELECT * FROM clothing WHERE category = 'women'")
-    #     return results.map do |result|
-    #
-    #         {
-    #             "id" => result["id"].to_i,
-    #             "name" => result["name"],
-    #             "image" => result["image"],
-    #             "price" => result["price"],
-    #             "description" => result["description"],
-    #             "category" => result["category"]
-    #         }
-    #     end
-    #
-    # end
-
-        # def self.all
-        #     results = DB.exec("SELECT * FROM womenwear ORDER BY id ASC")
-        #     return results.map do |result|
-        #
-        #         {
-        #             "id" => result["id"].to_i,
-        #             "name" => result["name"],
-        #             "image" => result["image"],
-        #             "price" => result["price"],
-        #             "description" => result["description"]
-        #         }
-        #     end
-        #
-        # end
 
 
 # SHOW
@@ -63,33 +33,35 @@ def self.find(id)
         "name" => results.first["name"],
         "image" => results.first["image"],
         "price" => results.first["price"],
-        "description" => results.first["description"]
+        "description" => results.first["description"],
+        "category" => results.first["category"]
     }
 
 end
 
-#UPDATE
+#create
 def self.create(res)
-results =DB.exec(
+    results =DB.exec(
     <<-SQL
-       INSERT INTO menwear (name, image, price, description)
-       VALUES ('#{res["name"]}','#{res["image"]}','#{res["price"]}',#{res["description"]})
-       RETURNING id, name, image, price, description
+        INSERT INTO clothing (name, image, price, description, category)
+        VALUES  ('#{res["name"]}','#{res["image"]}','#{res["price"]} ',#{res["description"]} ,#{res["category"]})
+        RETURNING id, name, image, price, description,category
     SQL
-)
- return{
-    "id" => results.first["id"].to_i,
-    "name" => results.first["name"],
-    "image" => results.first["image"],
-    "price" => results.first["price"],
-    "description" => results.first["description"]
- }
-end
+    )
+    return {
+        "id" => results.first["id"].to_i,
+        "name" => results.first["name"],
+        "image" => results.first["image"],
+        "price" => results.first["price"],
+        "description" => results.first["description"],
+        "category" => results.first["category"]
+    }
 
+end
 #DELETE
 
 def self.delete(id)
-results =DB.exec("DELETE FROM menwear WHERE id= #{id}")
+results =DB.exec("DELETE FROM clothing WHERE id= #{id}")
 return{"deleted" => true}
 
 end
@@ -99,15 +71,13 @@ end
 def self.update(id,res)
 results = DB.exec(
     <<-SQL
-         UPDATE menwear
-         SET name = '#{res["name"]}' , image ='#{res["image"]}',price ='#{res["price"]}',description =#{res["description"]}
+         UPDATE clothing
+         SET name = '#{res["name"]}' , image ='#{res["image"]}',price ='#{res["price"]}',description =#{res["description"]},
+         category =#{res["category"]}
          WHERE id=#{id}
-         RETURNING id, name, image, price, description
+         RETURNING id, name, image, price, description,category
     SQL
 )
 
-end
-
-
-
+  end
 end
