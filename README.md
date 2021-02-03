@@ -1,24 +1,11 @@
-# README
+# Spindle & Yarn
+#### Built by: Malik Ajose, Noel Rodriguez  & Ryan Klintworth
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+---
 
-Things you may want to cover:
+### Project Description:
+Spindle & Yarn is a trendy online store. Browse through our Mens and Womens section, for style inspiration. In our thirft section feel free to add and remove items as you would in a brick and motar thirft store you can also adjust them as you see fit.
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ..
+### Technologies:
+The store is a full CRUD single page application  built with CSS, Materialize, React.js, Ruby on Rails, PostgreSQL.
